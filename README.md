@@ -8,7 +8,7 @@ This program Converts `docker-compose.yml` files to Terraform HCL using the [kre
 - PyYAML
 
 ```
-pip install pyyaml
+pip install -r requirements.txt
 ```
 
 ## Project structure
