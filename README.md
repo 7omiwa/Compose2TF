@@ -14,9 +14,15 @@ pip install -r requirements.txt
 ## Project structure
 
 ```
-compose2tf.py        # CLI entry point
-src/
-  converter.py       # Parser and HCL generator
+│-  compose2tf.py
+│-  docker-compose.yml # its Recommended your Docker-Compose sit here but you can adjust in the Run command to specify dir 
+│-  README.md
+│-  requirements.txt
+│
+└───src
+    │   converter.py
+    │
+    └───__pycache_*
 ```
 
 ## Usage
