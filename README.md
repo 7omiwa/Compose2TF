@@ -1,4 +1,4 @@
-# compose2tf
+# Compose2TF
 
 Converts `docker-compose.yml` files to Terraform HCL using the [kreuzwerker/docker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs) provider.
 
