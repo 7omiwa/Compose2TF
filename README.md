@@ -141,3 +141,31 @@ terraform apply -var-file=prod.tfvars
 - `env_file:` references are noted but not inlined — values loaded from `.env` files at runtime are not visible to the converter.
 - `deploy:` (Swarm mode) fields are ignored.
 - All generated variable types are `string`. If your Terraform configuration needs numeric or boolean variables, adjust the generated blocks manually.
+
+
+⚠️ Important Notice
+
+Before applying any generated Terraform configuration, always review the output carefully.
+
+This converter automates translation from Docker Compose to Terraform, but generated infrastructure code should not be treated as automatically safe or production-ready without verification.
+
+It is strongly recommended to:
+```
+terraform init
+terraform plan -out=tfplan
+```
+Carefully review the generated execution plan before running:
+```
+terraform apply tfplan
+```
+Do not rely entirely on the authenticity or correctness of automatically generated Terraform files. Always validate networking, environment variables, volume mappings, exposed ports, secrets, and deployment behavior before applying changes to any environment.
+
+📜 License & Attribution
+
+This project is licensed under the GNU GPL License.
+If you use, modify, distribute, or build upon this codebase, proper attribution is appreciated.
+```
+Author: Olanipekun Emmanuel Tomiwa
+Email: mephisto.sting@yahoo.com
+GitHub Repository: Compose2TF Repository
+```
