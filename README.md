@@ -20,9 +20,7 @@ pip install -r requirements.txt
 │-  requirements.txt
 │
 └───src
-    │   converter.py
-    │
-    └───__pycache_*
+    └───   converter.py*
 ```
 
 ## Usage
