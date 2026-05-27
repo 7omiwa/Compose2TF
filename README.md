@@ -163,7 +163,7 @@ Do not rely entirely on the authenticity or correctness of automatically generat
 This project is licensed under the GNU GPL License.
 If you use, modify, distribute, or build upon this codebase, proper attribution is appreciated.
 ```
-Author: Olanipekun Emmanuel Tomiwa
+Author: Emmanuel Tomiwa
 Email: mephisto.sting@yahoo.com
 GitHub Repository: Compose2TF Repository
 ```
